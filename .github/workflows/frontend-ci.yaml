@@ -2,8 +2,12 @@ name: Frontend Continuous Integration
 
 on:
   workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'starter/frontend/**'
   pull_request:
-    branches: [main]
+    branches: [master]
     paths:
       - 'starter/frontend/**'
 
